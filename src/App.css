@@ -1,38 +1,40 @@
-.App {
+body {
+  background:#EEE;
+}
+#message-screen {
+  padding:12px;
+  margin:0 auto;
+  max-width:800px;
+}
+.message-views-container.loading {
+  cursor:wait;
+  filter:grayscale();
+}
+.message-view {
+  width:100%;
+
+  padding:24px;
+  margin-bottom:12px;
+  background:white;
+  border:1px solid grey;
+  border-radius:24px;
+}
+.message-text {
+  font-size:1.5rem;
+  margin:8px 0;
+}
+
+
+.message-topic {
+  cursor:pointer;
+  display: inline-block;
+  min-width:60px;
   text-align: center;
+  padding:8px;
+  background:lightgray;
+  border:1px solid grey;
+  border-radius:8px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-topic.selected {
+  background:orange;
 }
